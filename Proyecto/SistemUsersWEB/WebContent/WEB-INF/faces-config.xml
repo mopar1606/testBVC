@@ -9,5 +9,46 @@
     <application>
     	<view-handler>com.sun.facelets.FaceletViewHandler</view-handler>
     </application>
-
+    
+    <managed-bean>
+    	<description>Usuarios Bean</description>
+    	<managed-bean-name>usuariosBean</managed-bean-name>
+    	<managed-bean-class>co.sistemusers.bean.UsuariosBean</managed-bean-class>
+    	<managed-bean-scope>request</managed-bean-scope>
+    	<managed-property>
+    		<property-name>nombre</property-name>
+    		<property-class>java.lang.String</property-class>
+    		<value/>
+    	</managed-property>
+    	<managed-property>
+    		<property-name>apellidos</property-name>
+    		<property-class>java.lang.String</property-class>
+    		<value/>
+    	</managed-property>
+    	<managed-property>
+    		<property-name>nacionalidad</property-name>
+    		<property-class>java.lang.String</property-class>
+    		<value/>
+    	</managed-property>
+    	<managed-property>
+    		<property-name>email</property-name>
+    		<property-class>java.lang.String</property-class>
+    		<value/>
+    	</managed-property>
+    	<managed-property>
+    		<property-name>telefono</property-name>
+    		<property-class>java.lang.String</property-class>
+    		<value/>
+    	</managed-property>
+    	<managed-property>
+    		<property-name>observacion</property-name>
+    		<property-class>java.lang.String</property-class>
+    		<value/>
+    	</managed-property>
+    	<managed-property>
+    		<property-name>identificacion</property-name>
+    		<property-class>java.lang.String</property-class>
+    		<value/>
+    	</managed-property>
+    </managed-bean>
 </faces-config>

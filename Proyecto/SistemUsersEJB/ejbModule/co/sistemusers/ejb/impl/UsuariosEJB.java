@@ -15,7 +15,7 @@ import co.sistemusers.ejb.IUsuariosEJBLocal;
  * @author DEVELOP
  *
  */
-@Stateless
+@Stateless(name = "UsuariosEJB")
 public class UsuariosEJB extends BaseEJB implements IUsuariosEJBLocal{
 
 //	private Logger logger = Logger.getLogger(UsuariosEJB.class);

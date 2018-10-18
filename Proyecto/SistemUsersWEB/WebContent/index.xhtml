@@ -12,16 +12,43 @@
 	<h:form>
 		<rich:panel>
 			<f:facet name="header">
-				<h:outputText value="Prueba Faces"/>
+				<h:outputText value="Captura de Usuarios Nuevos"/>
 			</f:facet>
-			<h:commandLink value="NUEVO USUARIO" onclick="Richfaces.showModalPanel('frmNewUser:pnlNewUser');"/>
-		</rich:panel>
-		
-		<rich:modalPanel id="pnlNewUser">
+			<h:panelGrid border="1" columns="1">
+				<h:panelGrid columns="4">
+					<h:outputText value="Nombres: " style="font-weight:bold; font-size: 12px;"/>
+            		<rich:inplaceInput defaultLabel="click para digitar su nombre" value="#{usuariosBean.nombre}"/>
+            		<h:outputText value="Apellidos: " style="font-weight:bold; font-size: 12px;"/>
+            		<rich:inplaceInput defaultLabel="click para digitar su apellido"/>
+				</h:panelGrid>
+				<h:panelGrid columns="2">
+					<h:outputText value="Nacionalidad: " style="font-weight:bold; font-size: 12px;"/>
+            		<rich:inplaceInput defaultLabel="click para digitar su nacionalidad"/>
+				</h:panelGrid>
+				<h:panelGrid columns="4">
+					<h:outputText value="Tipo Documento: " style="font-weight:bold; font-size: 12px;"/>
+            		<rich:inplaceInput defaultLabel="click para digitar su tipo de documento"/>
+            		<h:outputText value="Numero Documento: " style="font-weight:bold; font-size: 12px;"/>
+            		<rich:inplaceInput defaultLabel="click para digitar su documento"/>
+				</h:panelGrid>
+				<h:panelGrid columns="4">
+					<h:outputText value="Correo: " style="font-weight:bold; font-size: 12px;"/>
+            		<rich:inplaceInput defaultLabel="click para digitar su correo"/>
+            		<h:outputText value="Telefono: " style="font-weight:bold; font-size: 12px;"/>
+            		<rich:inplaceInput defaultLabel="click para digitar su telefono"/>
+				</h:panelGrid>
+				<h:panelGrid columns="2">
+					<h:outputText value="Observaciones: " style="font-weight:bold; font-size: 12px;"/>
+            		<rich:inplaceInput defaultLabel="click para digitar su observacion"/>
+				</h:panelGrid>
+			</h:panelGrid>
+			<br/>
+			<a4j:commandButton value="REGISTRAR" action="#{usuariosBean.saveUser}"/>
+		</rich:panel>	
+		<rich:panel>
 			<f:facet name="header">
-				<h:outputText value="Registrar Nuevo Usuario"/>
+				<h:outputText value="Lista De Usuarios"/>
 			</f:facet>
-			Pruebaaaaa
-		</rich:modalPanel>
+		</rich:panel>	
 	</h:form>
 </html>

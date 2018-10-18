@@ -37,7 +37,7 @@
 		<link>
 			<name>ejbModule</name>
 			<type>2</type>
-			<locationURI>WORKSPACE_LOC/SistemUsersEJB/ejbModule</locationURI>
+			<location>C:/Users/ldiaz/Documents/GitHub/testBVC/Proyecto/SistemUsersEJB/ejbModule</location>
 		</link>
 	</linkedResources>
 </projectDescription>
